@@ -127,6 +127,28 @@ public class AddressBook {
             System.out.println("The state does not exist");
     }
 
+    void getCountCity(String city)
+    {
+        if(CityMap.get(city)!=null) {
+            ArrayList<Contact> p = CityMap.get(city);
+            System.out.println("The number of contacts for city "+city+" are: " + p.size());
+        }
+        else {
+            System.out.println("The city does not exist");
+        }
+    }
+
+    void getCountState(String state)
+    {
+        if(stateMap.get(state)!=null) {
+            ArrayList<Contact> p = stateMap.get(state);
+            System.out.println("The number of contacts for city "+state+" are: " + p.size());
+        }
+        else {
+            System.out.println("The city does not exist");
+        }
+    }
+
     void displayAllContacts()
     {
         for(String name : AddressMap.keySet())

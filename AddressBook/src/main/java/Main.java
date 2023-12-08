@@ -55,5 +55,7 @@ public class Main {
         book2.displayAllContacts();
         book2.searchCity("jsr");
         book2.searchState("bihar");
+        book2.getCountCity("jsr");
+        book2.getCountState("bihar");
     }
 }
