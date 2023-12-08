@@ -2,6 +2,7 @@ class Contact
 {
     String firstName,lastName,address,city,state,zip,phoneNumber;
 
+    /* Parameterized Constructor for initializing the class variables */
     Contact(String fName,String lName,String addressFull,String cityName,String stateName,String zipCode,String phnNumber)
     {
         firstName = fName;

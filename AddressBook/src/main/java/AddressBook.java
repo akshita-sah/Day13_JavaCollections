@@ -14,6 +14,8 @@ public class AddressBook {
         stateMap = new HashMap<>();
     }
 
+    /* To add a contact we create an object of contact and pass its values to parameterized constructor.
+    We keep three maps, for storing contacts according to name, city and state.*/
     void addContact(String fname,String lname,String addressFull,String cityName, String stateName,String zipCode, String phoneNumber)
     {
         Contact c = new Contact(fname,lname,addressFull,cityName,stateName,zipCode,phoneNumber);
@@ -33,7 +35,9 @@ public class AddressBook {
         c.display();
     }
 
-    void searchContact(String searchName)
+    /* To edit the contact first it is searched. Then using switch case the value is
+    changed according to choice.*/
+    void editContact(String searchName)
     {
         Contact c = (AddressMap.get(searchName));
         if(c==null)

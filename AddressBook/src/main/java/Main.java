@@ -46,7 +46,7 @@ public class Main {
         System.out.println("Enter the first name and last name you want to edit: ");
         searchfirstName = sc.next();
         searchlastName = sc.next();
-        book2.searchContact(searchfirstName+searchlastName);
+        book2.editContact(searchfirstName+searchlastName);
         System.out.println("Enter the first name and last name you want to delete: ");
         searchfirstName = sc.next();
         searchlastName = sc.next();
